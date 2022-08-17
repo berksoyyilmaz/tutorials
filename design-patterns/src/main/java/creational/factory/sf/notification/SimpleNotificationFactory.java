@@ -1,5 +1,10 @@
 package creational.factory.sf.notification;
 
+import creational.factory.sf.notification.types.EmailNotification;
+import creational.factory.sf.notification.types.Notification;
+import creational.factory.sf.notification.types.PushNotification;
+import creational.factory.sf.notification.types.SMSNotification;
+
 public class SimpleNotificationFactory {
 
     public Notification createNotification(String type) {

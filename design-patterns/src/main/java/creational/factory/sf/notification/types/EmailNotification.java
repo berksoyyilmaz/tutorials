@@ -1,4 +1,4 @@
-package creational.factory.sf.notification;
+package creational.factory.sf.notification.types;
 
 public class EmailNotification extends Notification {
     public EmailNotification() {

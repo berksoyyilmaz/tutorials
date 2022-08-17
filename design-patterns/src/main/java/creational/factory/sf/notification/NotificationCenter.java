@@ -1,5 +1,7 @@
 package creational.factory.sf.notification;
 
+import creational.factory.sf.notification.types.Notification;
+
 public class NotificationCenter {
     SimpleNotificationFactory factory;
 

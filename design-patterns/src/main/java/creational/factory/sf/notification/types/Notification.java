@@ -1,4 +1,4 @@
-package creational.factory.sf.notification;
+package creational.factory.sf.notification.types;
 
 public abstract class Notification {
     String name;
