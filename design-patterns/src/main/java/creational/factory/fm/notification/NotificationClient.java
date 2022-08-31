@@ -1,6 +1,6 @@
-package creational.factory.fm;
+package creational.factory.fm.notification;
 
-import creational.factory.fm.types.Notification;
+import creational.factory.fm.notification.types.Notification;
 
 public class NotificationClient {
   public static void main(String[] args) {

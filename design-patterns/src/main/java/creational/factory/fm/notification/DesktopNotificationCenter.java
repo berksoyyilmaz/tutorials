@@ -1,9 +1,9 @@
-package creational.factory.fm;
+package creational.factory.fm.notification;
 
-import creational.factory.fm.types.DesktopEmailNotification;
-import creational.factory.fm.types.DesktopPushNotification;
-import creational.factory.fm.types.DesktopSMSNotification;
-import creational.factory.fm.types.Notification;
+import creational.factory.fm.notification.types.DesktopEmailNotification;
+import creational.factory.fm.notification.types.DesktopPushNotification;
+import creational.factory.fm.notification.types.DesktopSMSNotification;
+import creational.factory.fm.notification.types.Notification;
 
 public class DesktopNotificationCenter extends NotificationCenter {
   @Override

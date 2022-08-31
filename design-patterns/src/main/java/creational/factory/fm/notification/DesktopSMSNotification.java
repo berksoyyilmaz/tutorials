@@ -1,4 +1,4 @@
-package creational.factory.fm.types;
+package creational.factory.fm.notification.types;
 
 public class DesktopSMSNotification extends Notification {
   public DesktopSMSNotification() {

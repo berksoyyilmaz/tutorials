@@ -1,9 +1,9 @@
-package creational.factory.fm;
+package creational.factory.fm.notification;
 
-import creational.factory.fm.types.MobileEmailNotification;
-import creational.factory.fm.types.MobilePushNotification;
-import creational.factory.fm.types.MobileSMSNotification;
-import creational.factory.fm.types.Notification;
+import creational.factory.fm.notification.types.MobileEmailNotification;
+import creational.factory.fm.notification.types.MobilePushNotification;
+import creational.factory.fm.notification.types.MobileSMSNotification;
+import creational.factory.fm.notification.types.Notification;
 
 public class MobileNotificationCenter extends NotificationCenter {
   @Override
