@@ -2,7 +2,10 @@ package creational.builder.house;
 
 public class HouseClient {
   public static void main(String[] args) {
-    House house = new House(4, 2, 4, true, false, false, false);
-    System.out.println(house);
+    House houseWithGarage = new HouseWithGarage(4, 2, 3, true);
+    System.out.println(houseWithGarage);
+
+    House houseWithSwimmingPool = new HouseWithSwimmingPool(4, 3, 5, true);
+    System.out.println(houseWithSwimmingPool);
   }
 }
