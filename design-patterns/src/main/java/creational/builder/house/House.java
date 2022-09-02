@@ -5,9 +5,15 @@ public class House {
   private int doors;
   private int rooms;
 
-  public House(int windows,
-               int doors,
-               int rooms) {
+  House(int windows) {
+    this(windows, 0, 0);
+  }
+
+  House(int windows, int doors) {
+    this(windows, doors, 0);
+  }
+
+  House(int windows, int doors, int rooms) {
     this.windows = windows;
     this.doors = doors;
     this.rooms = rooms;
