@@ -2,12 +2,7 @@ package creational.builder.house;
 
 public class HouseWithGarage extends House {
   private boolean hasGarage;
-
-  HouseWithGarage(int windows, int doors, int rooms, boolean hasGarage) {
-    super(windows, doors, rooms);
-    this.hasGarage = hasGarage;
-  }
-
+  
   public boolean isHasGarage() {
     return hasGarage;
   }

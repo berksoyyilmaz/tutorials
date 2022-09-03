@@ -7,7 +7,7 @@ public class HouseWithGarden extends House {
     super(windows, doors, rooms);
     this.hasGarden = hasGarden;
   }
-
+  
   public boolean isHasGarden() {
     return hasGarden;
   }
@@ -15,7 +15,7 @@ public class HouseWithGarden extends House {
   public void setHasGarden(boolean hasGarden) {
     this.hasGarden = hasGarden;
   }
-  
+
   @Override
   public String toString() {
     return "HouseWithGarden{" +

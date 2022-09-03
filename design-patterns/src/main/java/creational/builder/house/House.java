@@ -1,6 +1,6 @@
 package creational.builder.house;
 
-public class House {
+public abstract class House {
   private int windows;
   private int doors;
   private int rooms;
@@ -19,11 +19,15 @@ public class House {
     this.rooms = rooms;
   }
 
+  House() {
+
+  }
+
   public int getWindows() {
     return windows;
   }
 
-  public void setWindows(int windows) {
+  void setWindows(int windows) {
     this.windows = windows;
   }
 
@@ -31,7 +35,7 @@ public class House {
     return doors;
   }
 
-  public void setDoors(int doors) {
+  void setDoors(int doors) {
     this.doors = doors;
   }
 
@@ -39,7 +43,7 @@ public class House {
     return rooms;
   }
 
-  public void setRooms(int rooms) {
+  void setRooms(int rooms) {
     this.rooms = rooms;
   }
 
