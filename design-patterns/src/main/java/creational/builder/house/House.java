@@ -1,9 +1,9 @@
 package creational.builder.house;
 
 public class House {
-  private int windows;
-  private int doors;
-  private int rooms;
+  private final int windows;
+  private final int doors;
+  private final int rooms;
 
   private House(int windows, int doors, int rooms) {
     this.windows = windows;
@@ -27,24 +27,12 @@ public class House {
     return windows;
   }
 
-  void setWindows(int windows) {
-    this.windows = windows;
-  }
-
   public int getDoors() {
     return doors;
   }
 
-  void setDoors(int doors) {
-    this.doors = doors;
-  }
-
   public int getRooms() {
     return rooms;
-  }
-
-  void setRooms(int rooms) {
-    this.rooms = rooms;
   }
 
   @Override
