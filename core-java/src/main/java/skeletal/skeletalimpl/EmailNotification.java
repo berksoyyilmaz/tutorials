@@ -1,4 +1,4 @@
-package main.java.skeletal.skeletalimpl;
+package skeletal.skeletalimpl;
 
 class EmailNotification implements Notification {
   private final AbstractNotificationDelegator delegator = new AbstractNotificationDelegator();

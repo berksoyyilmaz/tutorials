@@ -1,8 +1,8 @@
-package main.java.skeletal.interfaceimpl;
+package skeletal.interfaceimpl;
 
 class EmailNotification implements Notification {
   @Override
-  private void start() {
+  public void start() {
     System.out.println("Start notification module");
   }
 
@@ -12,7 +12,7 @@ class EmailNotification implements Notification {
   }
 
   @Override
-  private void stop() {
+  public void stop() {
     System.out.println("Stop notification module");
   }
 

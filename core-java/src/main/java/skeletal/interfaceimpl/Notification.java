@@ -1,4 +1,4 @@
-package main.java.skeletal.interfaceimpl;
+package skeletal.interfaceimpl;
 
 interface Notification {
   void start();

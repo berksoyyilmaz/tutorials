@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>design-patterns</module>
+        <module>core-java</module>
     </modules>
 
     <properties>

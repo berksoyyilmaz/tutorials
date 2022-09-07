@@ -1,4 +1,4 @@
-package main.java.skeletal.defaultinterfaceimpl;
+package skeletal.defaultinterfaceimpl;
 
 class EmailNotification implements Notification {
   @Override

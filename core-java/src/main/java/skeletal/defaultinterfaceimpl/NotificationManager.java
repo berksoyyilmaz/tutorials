@@ -1,4 +1,4 @@
-package main.java.skeletal.defaultinterfaceimpl;
+package skeletal.defaultinterfaceimpl;
 
 class NotificationManager {
   public static void main(String[] args) {

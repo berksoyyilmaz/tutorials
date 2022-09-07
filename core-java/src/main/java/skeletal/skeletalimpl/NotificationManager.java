@@ -1,4 +1,4 @@
-package main.java.skeletal.skeletalimpl;
+package skeletal.skeletalimpl;
 
 class NotificationManager {
   public static void main(String[] args) {
