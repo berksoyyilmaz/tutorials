@@ -1,4 +1,4 @@
-package main.skeletal.defaultinterfaceimpl;
+package main.java.skeletal.defaultinterfaceimpl;
 
 class PushNotification implements Notification {
   @Override

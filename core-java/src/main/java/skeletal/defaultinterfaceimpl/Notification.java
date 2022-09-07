@@ -1,4 +1,4 @@
-package main.skeletal.defaultinterfaceimpl;
+package main.java.skeletal.defaultinterfaceimpl;
 
 interface Notification {
   default void start() {

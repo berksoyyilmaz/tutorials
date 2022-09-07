@@ -1,4 +1,4 @@
-package main.skeletal.interfaceimpl;
+package main.java.skeletal.skeletalimpl;
 
 interface Notification {
   void start();
@@ -8,4 +8,5 @@ interface Notification {
   void stop();
 
   void process();
+
 }

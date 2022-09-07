@@ -1,4 +1,4 @@
-package main.skeletal.abstractimpl;
+package main.java.skeletal.abstractimpl;
 
 class PushNotification extends AbstractNotification {
   @Override

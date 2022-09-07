@@ -1,13 +1,13 @@
-package main.skeletal.skeletalimpl;
+package main.java.skeletal.skeletalimpl;
 
 abstract class AbstractNotification implements Notification {
   @Override
-  public void start() {
+  private void start() {
     System.out.println("Start notification module");
   }
 
   @Override
-  public void stop() {
+  private void stop() {
     System.out.println("Stop notification module");
   }
 

@@ -1,13 +1,13 @@
-package main.skeletal.abstractimpl;
+package main.java.skeletal.interfaceimpl;
 
 class NotificationManager {
   public static void main(String[] args) {
-    AbstractNotification emailNotification = new EmailNotification();
+    Notification emailNotification = new EmailNotification();
     emailNotification.process();
 
     System.out.println("------");
 
-    AbstractNotification pushNotification = new PushNotification();
+    Notification pushNotification = new PushNotification();
     pushNotification.process();
   }
 }

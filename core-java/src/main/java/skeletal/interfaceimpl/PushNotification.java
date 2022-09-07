@@ -1,8 +1,8 @@
-package main.skeletal.interfaceimpl;
+package main.java.skeletal.interfaceimpl;
 
 class PushNotification implements Notification {
   @Override
-  public void start() {
+  private void start() {
     System.out.println("Start notification module");
   }
 
@@ -12,7 +12,7 @@ class PushNotification implements Notification {
   }
 
   @Override
-  public void stop() {
+  private void stop() {
     System.out.println("Stop notification module");
   }
 
