@@ -10,7 +10,6 @@ public class ProductIteratorDemo {
 
     printProduct(productIterator);
     printProduct(subProductIterator);
-
   }
 
   private static void printProduct(Iterator iterator) {
