@@ -14,7 +14,7 @@ class ObserverIntegrationTest {
     observable.addObserver(observer);
 
     observable.setNews("news");
-    assertEquals(observer.getNews(), "news");
+    assertEquals("news", observer.getNews());
   }
 
   @Test
@@ -26,7 +26,7 @@ class ObserverIntegrationTest {
     observable.addObserver(observer);
 
     observable.setNews("news");
-    assertEquals(observer.getNews(), "news");
+    assertEquals("news", observer.getNews());
   }
 
   @Test
@@ -38,6 +38,6 @@ class ObserverIntegrationTest {
     observable.addPropertyChangeListener(observer);
 
     observable.setNews("news");
-    assertEquals(observer.getNews(), "news");
+    assertEquals("news", observer.getNews());
   }
 }
