@@ -1,11 +1,10 @@
 package behavioral.templatemethod;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Computer {
 
-  private Map<String, String> computerParts = new HashMap<>();
+  private final Map<String, String> computerParts;
 
   public Computer(Map<String, String> computerParts) {
     this.computerParts = computerParts;

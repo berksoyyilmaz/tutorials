@@ -1,7 +1,7 @@
 package behavioral.templatemethod;
 
 public class HighEndComputerBuilder extends ComputerBuilder {
-
+  
   @Override
   public void addMotherboard() {
     computerParts.put("Motherboard", "High-end Motherboard");
@@ -18,4 +18,5 @@ public class HighEndComputerBuilder extends ComputerBuilder {
   public void addProcessor() {
     computerParts.put("Processor", "High-end Processor");
   }
+
 }
