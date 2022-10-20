@@ -46,6 +46,13 @@ public class StrategyDesignPatternUnitTest {
   }
 
   @Test
+  public void shouldDivideByTwo_WhenApplyingBirthdayDiscounterWithStaticInterfaceMethod() {
+    final BigDecimal discountedValue = birthday().apply(BigDecimal.valueOf(100));
+
+    assertThat(BigDecimal.valueOf(50), Matchers.comparesEqualTo(discountedValue));
+  }
+
+  @Test
   public void shouldApplyAllDiscounts() {
     List<Discounter> discounters = Arrays.asList(birthday(), newYear(), firstPurchased());
 
@@ -55,7 +62,8 @@ public class StrategyDesignPatternUnitTest {
         .stream()
         .reduce(v -> v, Discounter::combine);
 
-    combinedDiscounter.apply(amount);
+    BigDecimal resultAmount = combinedDiscounter.apply(amount);
+    assertThat(BigDecimal.valueOf(10.5), Matchers.comparesEqualTo(resultAmount));
   }
 
   @Test
@@ -64,7 +72,8 @@ public class StrategyDesignPatternUnitTest {
         .birthday()
         .andThen(newYear());
 
-    combinedDiscounters.apply(BigDecimal.valueOf(100));
+    BigDecimal resultAmount = combinedDiscounters.apply(BigDecimal.valueOf(100));
+    assertThat(BigDecimal.valueOf(15), Matchers.comparesEqualTo(resultAmount));
   }
 
 }
