@@ -1,13 +1,9 @@
 package structural.decorator.worst;
 
-public class BasicCar extends Car {
-
-  protected BasicCar(String name) {
-    super(name);
-  }
+public class BasicCar implements Car {
 
   @Override
-  void assemble() {
+  public void assemble() {
     System.out.print("Basic Car.");
   }
 }
