@@ -5,9 +5,9 @@ import org.slf4j.LoggerFactory;
 
 public class AirFlowMeter {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(AirFlowMeter.class);
+  private static final Logger logger = LoggerFactory.getLogger(AirFlowMeter.class);
 
   public void getMeasurements() {
-    LOGGER.info("Getting air measurements..");
+    logger.info("Getting air measurements..");
   }
 }

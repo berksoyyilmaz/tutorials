@@ -5,13 +5,13 @@ import org.slf4j.LoggerFactory;
 
 public class CatalyticConverter {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(CatalyticConverter.class);
+  private static final Logger logger = LoggerFactory.getLogger(CatalyticConverter.class);
 
   public void on() {
-    LOGGER.info("Catalytic Converter switched on!");
+    logger.info("Catalytic Converter switched on!");
   }
 
   public void off() {
-    LOGGER.info("Catalytic Converter switched off!");
+    logger.info("Catalytic Converter switched off!");
   }
 }

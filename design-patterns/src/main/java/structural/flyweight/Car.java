@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class Car implements Vehicle {
 
-  private static final Logger LOG = LoggerFactory.getLogger(Car.class);
+  private static final Logger logger = LoggerFactory.getLogger(Car.class);
 
   private final Engine engine;
   private final Color color;
@@ -19,13 +19,13 @@ public class Car implements Vehicle {
 
   @Override
   public void start() {
-    LOG.info("Car is starting!");
+    logger.info("Car is starting!");
     engine.start();
   }
 
   @Override
   public void stop() {
-    LOG.info("Car is stopping!");
+    logger.info("Car is stopping!");
     engine.stop();
   }
 

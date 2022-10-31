@@ -5,17 +5,17 @@ import org.slf4j.LoggerFactory;
 
 public class Radiator {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(Radiator.class);
+  private static final Logger logger = LoggerFactory.getLogger(Radiator.class);
 
   public void on() {
-    LOGGER.info("Radiator switched on!");
+    logger.info("Radiator switched on!");
   }
 
   public void off() {
-    LOGGER.info("Radiator switched off!");
+    logger.info("Radiator switched off!");
   }
 
   public void setSpeed(Integer speed) {
-    LOGGER.info("Setting radiator speed to {}", speed);
+    logger.info("Setting radiator speed to {}", speed);
   }
 }

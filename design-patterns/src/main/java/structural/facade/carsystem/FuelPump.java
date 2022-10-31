@@ -5,9 +5,9 @@ import org.slf4j.LoggerFactory;
 
 public class FuelPump {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(FuelPump.class);
+  private static final Logger logger = LoggerFactory.getLogger(FuelPump.class);
 
   public void pump() {
-    LOGGER.info("Fuel Pump is pumping fuel..");
+    logger.info("Fuel Pump is pumping fuel..");
   }
 }
