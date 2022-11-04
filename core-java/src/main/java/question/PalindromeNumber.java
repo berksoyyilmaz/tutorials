@@ -28,18 +28,18 @@ public class PalindromeNumber {
     }
 
     char[] chars = String.valueOf(x).toCharArray();
+    int halfCharLenght = chars.length / 2;
+    char[] firstChars = new char[halfCharLenght];
+    char[] secondChars = new char[halfCharLenght];
 
-    char[] newChars = new char[chars.length];
-
-    for (int i = 0, charsLength = chars.length; i < charsLength; i++) {
-      char aChar = chars[i];
-      newChars[newChars.length - 1 - i] = aChar;
+    for (int i = 0; i < halfCharLenght; i++) {
+      firstChars[i] = chars[i];
+      secondChars[i] = chars[chars.length - i - 1];
     }
 
+    String firstStr = Arrays.toString(firstChars);
+    String secondStr = Arrays.toString(secondChars);
 
-    String s = Arrays.toString(chars);
-    String s1 = Arrays.toString(newChars);
-
-    return s.equals(s1);
+    return firstStr.equals(secondStr);
   }
 }

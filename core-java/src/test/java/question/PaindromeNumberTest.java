@@ -10,7 +10,8 @@ class PaindromeNumberTest {
   @CsvSource({
       "121, true",
       "-121, false",
-      "10, false"
+      "10, false",
+      "1001, true"
   })
   void giveValidNumber_whenIsPalindrome_thenReturnTrue(int number, boolean expectedResult) {
     PalindromeNumber palindromeNumber = new PalindromeNumber();
