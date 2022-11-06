@@ -13,7 +13,7 @@ class PaindromeNumberTest {
       "10, false",
       "1001, true"
   })
-  void giveValidNumber_whenIsPalindrome_thenReturnTrue(int number, boolean expectedResult) {
+  void giveNumber_whenIsPalindrome_thenReturnResult(int number, boolean expectedResult) {
     PalindromeNumber palindromeNumber = new PalindromeNumber();
     boolean isPalindrome = palindromeNumber.isPalindrome(number);
 
