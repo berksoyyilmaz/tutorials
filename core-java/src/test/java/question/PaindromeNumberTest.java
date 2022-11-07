@@ -9,9 +9,9 @@ class PaindromeNumberTest {
   @ParameterizedTest
   @CsvSource({
       "121, true",
+      "1001, true",
       "-121, false",
-      "10, false",
-      "1001, true"
+      "10, false"
   })
   void giveNumber_whenIsPalindrome_thenReturnResult(int number, boolean expectedResult) {
     PalindromeNumber palindromeNumber = new PalindromeNumber();
