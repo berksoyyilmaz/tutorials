@@ -1,8 +1,8 @@
 package algorithms.sort;
 
-import java.util.Arrays;
+import algorithms.ArrayUtils;
+
 import java.util.Random;
-import java.util.stream.Collectors;
 
 public class MergeSort {
   public static void main(String[] args) {
@@ -13,10 +13,10 @@ public class MergeSort {
       numbers[i] = random.nextInt(100);
     }
     System.out.print("Before: ");
-    printArray(numbers);
+    ArrayUtils.printArray(numbers);
     System.out.print("After: ");
     mergeSort(numbers);
-    printArray(numbers);
+    ArrayUtils.printArray(numbers);
   }
 
   private static void mergeSort(int[] inputArray) {
@@ -72,10 +72,5 @@ public class MergeSort {
       j++;
       k++;
     }
-  }
-
-  private static void printArray(int[] numbers) {
-    String collect = Arrays.stream(numbers).mapToObj(String::valueOf).collect(Collectors.joining(","));
-    System.out.println(collect);
   }
 }
