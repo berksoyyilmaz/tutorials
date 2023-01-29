@@ -1,5 +1,7 @@
 package algorithms.sort;
 
+import java.util.Arrays;
+
 public class InsertionSort {
   public static void main(String[] args) {
 
@@ -17,9 +19,7 @@ public class InsertionSort {
       intArray[i] = newElement;
     }
 
-    for (int i = 0; i < intArray.length; i++) {
-      System.out.println(intArray[i]);
-    }
+    Arrays.stream(intArray).forEachOrdered(System.out::println);
 
   }
 }
