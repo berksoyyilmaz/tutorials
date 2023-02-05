@@ -16,6 +16,10 @@ public class Radix {
       placeValue *= 10;
     }
   }
+  
+  private static int findMaximumNumberIn(int[] arr) {
+    return Arrays.stream(arr).max().getAsInt();
+  }
 
   private static void applyCountingSortOn(int[] numbers, int placeValue) {
     int range = 10; // radix or the base
@@ -46,9 +50,6 @@ public class Radix {
     return (int) Math.log10(number) + 1; // valid only if number > 0
   }
 
-  private static int findMaximumNumberIn(int[] arr) {
-    return Arrays.stream(arr).max().getAsInt();
-  }
 
   public static void main(String[] args) {
     int[] intArray = {20, 35, 15, 7, 55, 1, 22};
